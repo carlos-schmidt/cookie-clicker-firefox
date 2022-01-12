@@ -1,7 +1,7 @@
 console.log("Found stackover...");
 
 clickTagElementByName("button", "Customize settings");
-setTimeout(clickTagElementByName, 500, "button", "Confirm my choices");
+var interv = setInterval(clickTagElementByNameNonstop, 200, "button", "Confirm my choices");
 
 function clickTagElementByName(tagName, name) {
     const tagElements = document.getElementsByTagName(tagName);
@@ -12,3 +12,12 @@ function clickTagElementByName(tagName, name) {
     }
 }
 
+function clickTagElementByNameNonstop(tagName, name) {
+    const tagElements = document.getElementsByTagName(tagName);
+    for (const tagElement of tagElements) {
+        if (tagElement.innerText === name) {
+            tagElement.click();
+            clearInterval(interv);
+        }
+    }
+}
