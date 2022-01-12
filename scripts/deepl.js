@@ -1,4 +1,4 @@
-console.log("Found deepl...");
+console.log("Found dee...");
 
 clickTagElementByName("button", "Auswahl akzeptieren");
 

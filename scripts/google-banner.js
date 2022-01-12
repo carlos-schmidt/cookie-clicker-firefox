@@ -1,3 +1,6 @@
+console.log("Found goog...");
+
+
 const docLanguage = document.getElementsByTagName('html')[0].getAttribute('lang');
 switch (docLanguage.slice(0, 2)) {
     case "de":
