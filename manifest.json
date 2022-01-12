@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+  "name": "Cookie-Clicker",
+  "version": "1.0",
+  "description": "Clicks away cookies with the website's best options regarding privacy.",
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.google.com/*",
+        "*://*.google.de/*",
+        "*://*.youtube.com/*",
+        "*://*.youtube.de/*"
+      ],
+      "js": [
+        "google-banner.js"
+      ]
+    },
+    {
+      "matches": [
+        "*://*.stackoverflow.com/*"
+      ],
+      "js": [
+        "stackoverflow.js"
+      ]
+    },
+    {
+      "matches": [
+        "*://*.deepl.com/*"
+      ],
+      "js": [
+        "deepl.js"
+      ]
+    }
+  ]
+}
