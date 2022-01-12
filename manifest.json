@@ -10,12 +10,19 @@
     {
       "matches": [
         "*://*.google.com/*",
-        "*://*.google.de/*",
+        "*://*.google.de/*"
+      ],
+      "js": [
+        "scripts/google-banner.js"
+      ]
+    },
+    {
+      "matches": [
         "*://*.youtube.com/*",
         "*://*.youtube.de/*"
       ],
       "js": [
-        "scripts/google-banner.js"
+        "scripts/youtube.js"
       ]
     },
     {
