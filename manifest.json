@@ -15,7 +15,7 @@
         "*://*.youtube.de/*"
       ],
       "js": [
-        "google-banner.js"
+        "scripts/google-banner.js"
       ]
     },
     {
@@ -23,7 +23,7 @@
         "*://*.stackoverflow.com/*"
       ],
       "js": [
-        "stackoverflow.js"
+        "scripts/stackoverflow.js"
       ]
     },
     {
@@ -31,7 +31,7 @@
         "*://*.deepl.com/*"
       ],
       "js": [
-        "deepl.js"
+        "scripts/deepl.js"
       ]
     }
   ]
